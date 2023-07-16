@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import Arrow from '@/components/icons/Arrow.vue';
 import type { PropType } from 'vue';
 import type { RouteLocationRaw } from 'vue-router';
 

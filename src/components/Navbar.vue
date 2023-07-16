@@ -18,9 +18,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-import GithubIcon from '@/components/icons/GithubIcon.vue'
-import IconBtn from './IconBtn.vue';
-import LinkedIn from './icons/LinkedIn.vue';
-</script>

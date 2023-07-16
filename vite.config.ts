@@ -5,6 +5,7 @@ import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import Markdown from 'vite-plugin-vue-markdown'
 import MarkdownItVideo from 'markdown-it-video'
+import Components from 'unplugin-vue-components/vite'
 
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import {
@@ -33,6 +34,12 @@ export default defineConfig({
       markdownItSetup(md) {
         md.use(MarkdownItVideo)
       }
+    }),
+    Components({
+      // allow auto load markdown components under `./src/components/`
+      extensions: ['vue', 'md'],
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      dts: true,
     })
   ],
   resolve: {

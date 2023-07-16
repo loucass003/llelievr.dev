@@ -1,11 +1,11 @@
-## How it started?
+<ContentTitle tag="h2">How it started?</ContentTitle>
 
 I was looking at full body tracking / motion capture solutions for a virtual production project of mine.
-And ended up finding the slimevr project from one of [@ThrillSeekerVR](https://www.youtube.com/@ThrillSeekerVR) videos.
+And ended up finding the SlimeVR project from one of [@ThrillSeekerVR](https://www.youtube.com/@ThrillSeekerVR) videos.
 
-Why choose slimevr you may ask? Here is small unordered list of why slimevr is a good solution:
+Why choose SlimeVR you may ask? Here is small unordered list of why SlimeVR is a good solution:
 
-1. The price: A set of SlimeVR trackers, Especially DIY Can be made for about 200€ where existing solutions like HTC vive trackers would require 160€ per trackers and you need at least 3 trackers to make it work, and you would also add another 300€ if you do not have base station.
+1. The price: A set of SlimeVR trackers, Especially DIY, can be built for around 200€ where existing solutions like HTC vive trackers would require 160€ per trackers and you need at least 3 trackers to make it work, and you would also add another 300€ if you do not have base station.
 2. You do not need base stations! SlimeVR use IMUs to know its rotation in space so it does not require any equipment installed in your room to know its location.
 3. It cannot be occluded by clothes or objects. In my case I was looking at solutions where the trackers could be hidden underneath clothes.
 4. It is Open Source! That means I could mess around with the code to make it fit my needs.
@@ -23,7 +23,7 @@ SlimeVR is a low-cost solution to Full Body Tracking in VR. It uses forward kine
 
 Because the headset is a known position and rotation is derived from it, it does not require lighthouses or other forms of additional tracking to model your movement. Your headset and controllers’ built in tracking of the hands manages your shoulders and arms. SlimeVR uses data from Inertial measurement units (IMU) to determine this rotation, and the number of IMU used determines how many tracking points are available.
 
-Here is a good visual of what slimevr looks like when used for Real time Mocap inside Unity!
+Here is a good visual of what SlimeVR looks like when used for Real time Mocap inside Unity!
 
 @[youtube](https://youtu.be/KIxrEe7zjQw)
 
@@ -32,7 +32,7 @@ Here is a good visual of what slimevr looks like when used for Real time Mocap i
 
 ### My first trackers 
 The [SlimeVR Documentation](https://docs.slimevr.dev/) was the perfect place to get started.
-From there I could list and order the parts to build my first set of slimevr trackers!
+From there I could list and order the parts to build my first set of SlimeVR trackers!
 
 After a good month of waiting for the parts to come to France I started to design a 3d printed case to hold all the electronics.
 
@@ -109,7 +109,7 @@ This is where me and most contributers of slimevr decided we where gonna use [fl
 
 Once we decided on the schema of for the protocol, I started implementing all of it and refactoring most of the Java server to use the new protocol and separate the GUI logic from the server logic as it was deeply merged together.
 
-After a few weeks of programming the GUI and the new protocol me and Mrjvs decided to make the GUI look even better, and also worked on a style guide for the whole interface. We also had been preparing a new onboarding process for new users to get their trackers setup and explaining how everything works
+After a few weeks of programming the GUI and the new protocol, me and Mrjvs decided to make the GUI look even better! We also worked on a style guide for the whole interface abd had been preparing a new onboarding process for new users. The goal was to make their first experience with the interface smoother
 
 Here are some sections of new guidelines:
 

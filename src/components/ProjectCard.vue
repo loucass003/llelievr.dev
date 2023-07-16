@@ -15,8 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import ArrowLink from './ArrowLink.vue';
-
 defineProps({
     id: {
         type: String,
