@@ -1,0 +1,4 @@
+@import url('fonts/blenderpro.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
