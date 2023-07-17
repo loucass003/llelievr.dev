@@ -1,4 +1,4 @@
-<ContentTitle tag="h2" hash="how-it-started">How it started?</ContentTitle>
+<ContentTitle tag="h2" hash="how-it-started" label="How it started?"/>
 
 I was looking at full-body tracking/motion capture solutions for a virtual production project of mine.
 And ended up finding the SlimeVR project from one of [@ThrillSeekerVR](https://www.youtube.com/@ThrillSeekerVR)'s videos.
@@ -15,7 +15,7 @@ You can also check how the trackers compare to others in terms of specifications
 
 I thus joined their [Discord server](https://discord.gg/SlimeVR) and immediately fell in love with the project! The project being still really new, no commercial solution for it was available yet, so there was no way I could have my hands on it unless I built a set on my own. Fortunately, all of that was possible with the power of the open-source community. You can check the [SlimeVR repository](https://github.com/SlimeVR) for more info.
 
-<ContentTitle tag="h2" hash="what-is-slimevr">What is SlimeVR?</ContentTitle>
+<ContentTitle tag="h2" hash="what-is-slimevr" label="What is SlimeVR?"/>
 
 Most of what I am going to tell here is coming directly from the [SlimeVR Documentation](https://docs.slimevr.dev/), I would really recommend you do go check it out if you are interested!
 
@@ -27,10 +27,10 @@ Here is a good visual of what SlimeVR looks like when used for real-time Mocap i
 
 @[youtube](https://www.youtube.com/watch?v=KIxrEe7zjQw)
 
-<ContentTitle tag="h2" hash="building-trackers">Building my trackers</ContentTitle>
+<ContentTitle tag="h2" hash="building-trackers" label="Building my trackers"/>
 
 
-<ContentTitle tag="h3" hash="first-trackers">My first trackers</ContentTitle>
+<ContentTitle tag="h3" hash="first-trackers" parent="building-trackers" label="My first trackers"/>
 The [SlimeVR Documentation](https://docs.slimevr.dev/) was the perfect place to get started.
 From there I could list and order the parts to build my first set of SlimeVR trackers!
 
@@ -48,7 +48,7 @@ And after many hours of soldering I had a full set of DIY Trackers!
 
 ![My First SlimeVR Trackers](/images/slimevr/tracker-1-set.jpg)
 
-<ContentTitle tag="h3" hash="new-trackers">Time for an upgrade</ContentTitle>
+<ContentTitle tag="h3" hash="new-trackers" parent="building-trackers" label="Time for an upgrade"/>
 
 Then after a few weeks of usage, something terrible happened! They Broke! I guess my soldering was not that great after all... (nobody saw that happening... really...)
 I didn't want that to happen ever again so I ended up designing my own PCBs!
@@ -61,9 +61,9 @@ I thus designed a case for those to fit in.
 
 ![A case for those pcbs](/images/slimevr/tracker-2-case.jpg)
 
-<ContentTitle tag="h2" hash="my-contribution">My contribution to SlimeVR</ContentTitle>
+<ContentTitle tag="h2" hash="my-contribution" label="My contribution to SlimeVR"/>
 
-<ContentTitle tag="h3" hash="firmware-flashing-tool">The Firmware Flashing tool</ContentTitle>
+<ContentTitle tag="h3" hash="firmware-flashing-tool" parent="my-contribution" label="The Firmware Flashing tool"/>
 
 After a few months on the SlimeVR discord, I realized that most of the issues when doing DIY trackers were with configuring and flashing the firmware onto the trackers. It required a good amount of setup, using Git, VSCode and PlatformIO, as well as changing header files in the actual code to configure properly what IMU is used, with what rotation, on what pins, and What kind of MCU you are using. It was complex for people without programming experience.
 
@@ -84,7 +84,7 @@ A few random notes about this interface:
 This tool managed to streamline greatly the process of flashing trackers and helped the SlimeVR community.
 You can find all the necessary [source code here](https://github.com/SlimeVR/SlimeVR-Firmware-WebBuilder).
 
-<ContentTitle tag="h3" hash="slimevr-gui">SlimeVR GUI</ContentTitle>
+<ContentTitle tag="h3" hash="slimevr-gui" parent="my-contribution" label="SlimeVR GUI"/>
 
 SlimeVR started with a simple interface made with Java. We must be honest here to say that it was not very pretty...
 But hey! It was doing all the functions it needed at the time. It only needed some love <3
@@ -125,7 +125,7 @@ Support for Android and iOS got added, so I also worked on a more responsive des
 
 ![The mobile gui](/images/slimevr/slimevr-mobile-gui.gif)
 
-<ContentTitle tag="h2" hash="conclusion">Conclusion</ContentTitle>
+<ContentTitle tag="h2" hash="conclusion" label="Conclusion"/>
 
 I have been contributing to SlimeVR for about two years now and will continue to do so. This project can do so much for the VR community and Mocap enthusiasts and is already doing a lot and shaking things up!
 

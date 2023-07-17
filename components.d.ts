@@ -9,7 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     Arrow: typeof import('./src/components/icons/Arrow.vue')['default']
     ArrowLink: typeof import('./src/components/ArrowLink.vue')['default']
-    ContentTitle: typeof import('./src/components/ContentTitle.vue')['default']
+    ContentTitle: typeof import('./src/components/project/ContentTitle.vue')['default']
     GithubIcon: typeof import('./src/components/icons/GithubIcon.vue')['default']
     IconBtn: typeof import('./src/components/IconBtn.vue')['default']
     LinkedIn: typeof import('./src/components/icons/LinkedIn.vue')['default']
@@ -20,6 +20,6 @@ declare module 'vue' {
     ProjectLayout: typeof import('./src/components/layouts/ProjectLayout.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TableOfContent: typeof import('./src/components/TableOfContent.vue')['default']
+    TableOfContent: typeof import('./src/components/project/TableOfContent.vue')['default']
   }
 }

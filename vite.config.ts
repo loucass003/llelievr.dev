@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import Markdown from 'vite-plugin-vue-markdown'
-import MarkdownItVideo from 'markdown-it-video'
+// import MarkdownItVideo from 'markdown-it-video'
 import Components from 'unplugin-vue-components/vite'
 
 
@@ -13,6 +13,8 @@ import {
   ExternalFluentPlugin,
   SFCFluentPlugin,
 } from 'unplugin-fluent-vue/vite'
+
+
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -33,7 +35,7 @@ export default defineConfig({
     }),
     Markdown({
       markdownItSetup(md) {
-        md.use(MarkdownItVideo)
+        // md.use(MarkdownItVideo)
       }
     }),
     Components({

@@ -2,8 +2,8 @@
     <div class="md:px-10 sm:px-4 xs:px-2 w-full flex justify-around">
         <div class="w-full max-w-5xl flex flex-col">
             <Navbar></Navbar>
-            <div class="flex flex-col bg-app-background-content rounded-3xl overflow-hidden">
-                <div class="flex w-full h-[400px] sm:px-8 xs:px-4" :style="{
+            <div class="flex flex-col bg-app-background-content rounded-3xl">
+                <div class="flex w-full h-[400px] sm:px-8 xs:px-4 overflow-hidden" :style="{
                     backgroundImage: `linear-gradient(rgb(39 24 93 / 20%), rgb(20, 20, 26)), url(/images/${$t(`project-${$route.params.id?.toString()}-image`)})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
@@ -25,8 +25,8 @@
                         </div>
                     </div>
                     <div class="flex min-w-[250px] xs:hidden md:block h-full">
-                        <div class="sticky top-0">
-                            <TableOfContent bind-to="page-container" looking-at="h2"></TableOfContent>
+                        <div class="sticky top-4">
+                            <TableOfContent :items="tocStore.toc"></TableOfContent>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,9 @@
 </template>
 
 <script setup lang="ts">
+import { useTocStore } from '@/store/tocStore';
 import { RouterView } from 'vue-router'
-import Navbar from '@/components/Navbar.vue';
-import TableOfContent from '@/components/TableOfContent.vue';
+
+const tocStore = useTocStore();
+
 </script>
