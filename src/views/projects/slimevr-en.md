@@ -25,7 +25,7 @@ Because the headset is the only required absolute data point and that the rest o
 
 Here is a good visual of what SlimeVR looks like when used for real-time Mocap inside Unity!
 
-@[youtube](https://you8y6tu.be/KIxrEe7zjQw)
+@[youtube](https://www.youtube.com/watch?v=KIxrEe7zjQw)
 
 <ContentTitle tag="h2" hash="building-trackers">Building my trackers</ContentTitle>
 

@@ -26,7 +26,15 @@ const PageContent = defineAsyncComponent({
 </script>
 
 
-<fluent locale="en">
+<style scoped>
+.prose img {
+    width: 100%;
+    height: 600px;
+    max-width: none;
+    object-fit: contain;
+}
 
-
-</fluent>
+.prose .embed-responsive iframe {
+    width: 100%;
+}
+</style>

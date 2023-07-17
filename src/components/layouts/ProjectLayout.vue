@@ -20,7 +20,9 @@
                         <h2 class="text-xl text-justify font-bold">{{ $t(`project-${$route.params.id?.toString()}-desc`) }}
                         </h2>
                         <div class="flex h-0.5 rounded-xl mx-10 bg-app-muted my-4"></div>
-                        <RouterView></RouterView>
+                        <div class="">
+                            <RouterView></RouterView>
+                        </div>
                     </div>
                     <div class="flex min-w-[250px] xs:hidden md:block h-full">
                         <div class="sticky top-0">
