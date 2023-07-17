@@ -49,7 +49,12 @@ const router = createRouter({
       path: '/:catchAll(.*)',
       redirect: '/404'
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' }
+    }
+  },
 })
 
 export default router

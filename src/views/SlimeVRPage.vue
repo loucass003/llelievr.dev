@@ -1,6 +1,6 @@
 <template>
     <div class="prose max-w-none w-full text-justify">
-        <PageContent />
+        <PageContent></PageContent>
     </div>
 </template>
 
@@ -14,15 +14,15 @@ const router = useRouter()
 // TODO: To complete
 const lang = 'en';
 
-const PageContent = defineAsyncComponent(
-    async () => {
+const PageContent = defineAsyncComponent({
+    loader: async () => {
         const comp = await import(`@/views/projects/${route.params.id}-${lang}.md`).catch((e) => {
             router.push({ name: '404' })
         })
-        console.log(comp)
         return comp;
-    }
-)
+    },
+
+})
 </script>
 
 
