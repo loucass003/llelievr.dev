@@ -7,6 +7,7 @@ import Markdown from 'vite-plugin-vue-markdown'
 import MarkdownItVideo from 'markdown-it-video'
 import Components from 'unplugin-vue-components/vite'
 
+
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import {
   ExternalFluentPlugin,
