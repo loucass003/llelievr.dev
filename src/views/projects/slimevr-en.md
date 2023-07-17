@@ -1,7 +1,7 @@
 <ContentTitle tag="h2" hash="how-it-started">How it started?</ContentTitle>
 
 I was looking at full-body tracking/motion capture solutions for a virtual production project of mine.
-And ended up finding the SlimeVR project from one of [@ThrillSeekerVR](https://www.youtube.com/@ThrillSeekerVR) videos.
+And ended up finding the SlimeVR project from one of [@ThrillSeekerVR](https://www.youtube.com/@ThrillSeekerVR)'s videos.
 
 Why choose SlimeVR you may ask? Here is a small unordered list of why SlimeVR is a good solution:
 
@@ -21,7 +21,7 @@ Most of what I am going to tell here is coming directly from the [SlimeVR Docume
 
 SlimeVR is a low-cost solution to full-Body tracking in virtual reality. It uses forward kinematics to build a model of your skeleton calculated from the rotation of each individual tracker, with your headset and controllers being the only absolute known position.
 
-Because the headset is the only absolute data point and that positions and rotations are derived from it, SlimeVR does not require lighthouses or other forms of additional tracking to model your movement. SlimeVR uses data from Inertial Measurement Units (IMU) to determine the rotation of each tracker, and the number of IMUs used determines how many tracking points are available.
+Because the headset is the only required absolute data point and that the rest of the skeleton is derived from it, SlimeVR does not require lighthouses or other forms of additional tracking to model your movement. SlimeVR uses data from Inertial Measurement Units (IMU) to determine the rotation of each tracker, and the number of IMUs used determines how many tracking points are available.
 
 Here is a good visual of what SlimeVR looks like when used for real-time Mocap inside Unity!
 
