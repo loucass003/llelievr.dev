@@ -32,15 +32,12 @@ onMounted(() => {
     // This is so it scroll on loading, 
     // because the content of the page is lazy loaded i cannot put that logic 
     // inside the router scroll behaviour
-    // setTimeout(() => {
     if (props.hash === route.hash.substring(1)) {
         const elem = document.getElementById(props.hash);
         if (elem) {
             elem.scrollIntoView({ behavior: 'smooth' })
         }
     }
-    // }, 1000)
-
 })
 
 </script>
