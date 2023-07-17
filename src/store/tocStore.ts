@@ -44,6 +44,12 @@ export const useTocStore = defineStore('toc', () => {
 
     })
 
+    const reset = () => {
+        toc.value = [];
+        activeHash.value = undefined;
+        console.log('clear')
+    }
 
-    return { toc, activeHash, addItem }
+
+    return { toc, activeHash, addItem, reset }
 })

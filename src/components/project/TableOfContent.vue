@@ -1,6 +1,6 @@
 <template>
     <div v-for="item in $props.items">
-        <router-link :key="item.hash" :to="{ name: 'ProjectPage', params: $route.params, hash: `#${item.hash}` }"
+        <router-link :key="item.hash" :to="{ name: 'BlogPage', params: $route.params, hash: `#${item.hash}` }"
             class="flex group  items-center gap-2 hover:text-app-foreground-code">
             <!-- <Arrow direction="right" :size="16"></Arrow> -->
             <div v-if="activeHash !== item.hash">

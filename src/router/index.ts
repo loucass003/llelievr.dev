@@ -15,29 +15,14 @@ const router = createRouter({
       ]
     },
     {
-      path: '/project/:id',
-      component: () => import('@/components/layouts/ProjectLayout.vue'),
+      path: '/blog/:id',
+      component: () => import('@/components/layouts/BlogLayout.vue'),
       children: [
         {
           path: '',
-          name: 'ProjectPage',
-          component: () => import('@/views/SlimeVRPage.vue'),
+          name: 'BlogPage',
+          component: () => import('@/views/BlogPage.vue'),
         },
-        // {
-        //   path: 'diy-bluetooth-speaker',
-        //   name: 'DIYBluetoothPage',
-        //   component: () => import('@/views/SlimeVRPage.vue'),
-        // },
-        // {
-        //   path: 'launch.it',
-        //   name: 'LaunchitPage',
-        //   component: () => import('@/views/SlimeVRPage.vue'),
-        // },
-        // {
-        //   path: 'face-tracker',
-        //   name: 'FaceTrackerPage',
-        //   component: () => import('@/views/SlimeVRPage.vue'),
-        // },
       ]
     },
     {

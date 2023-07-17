@@ -40,5 +40,4 @@ import { useTocStore } from '@/store/tocStore';
 import { RouterView } from 'vue-router'
 
 const tocStore = useTocStore();
-
 </script>

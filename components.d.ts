@@ -9,6 +9,8 @@ declare module 'vue' {
   export interface GlobalComponents {
     Arrow: typeof import('./src/components/icons/Arrow.vue')['default']
     ArrowLink: typeof import('./src/components/ArrowLink.vue')['default']
+    BlogCard: typeof import('./src/components/BlogCard.vue')['default']
+    BlogLayout: typeof import('./src/components/layouts/BlogLayout.vue')['default']
     ContentTitle: typeof import('./src/components/project/ContentTitle.vue')['default']
     GithubIcon: typeof import('./src/components/icons/GithubIcon.vue')['default']
     IconBtn: typeof import('./src/components/IconBtn.vue')['default']

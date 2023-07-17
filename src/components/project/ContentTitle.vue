@@ -1,6 +1,6 @@
 <template>
     <contentTag>
-        <router-link :to="{ name: 'ProjectPage', hash: `#${hash}` }" :id="hash"
+        <router-link :to="{ name: 'BlogPage', hash: `#${hash}` }" :id="hash"
             class="hover:underline fill-app-foreground-bright flex gap-2 items-center text-app-foreground-code no-underline">
             {{ label }}
             <LinkIcon></LinkIcon>

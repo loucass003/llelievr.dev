@@ -5,6 +5,10 @@
 </template>
 
 <script setup lang="ts">
+import { useTocStore } from '@/store/tocStore';
+import { onMounted } from 'vue';
+import { onUpdated } from 'vue';
+import { onUnmounted } from 'vue';
 import { defineAsyncComponent } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
@@ -14,8 +18,11 @@ const router = useRouter()
 // TODO: To complete
 const lang = 'en';
 
+const useToc = useTocStore();
+
 const PageContent = defineAsyncComponent({
     loader: async () => {
+
         const comp = await import(`@/views/projects/${route.params.id}-${lang}.md`).catch((e) => {
             router.push({ name: '404' })
         })
@@ -23,6 +30,11 @@ const PageContent = defineAsyncComponent({
     },
 
 })
+
+onUnmounted(() => {
+    useToc.reset()
+})
+
 </script>
 
 
