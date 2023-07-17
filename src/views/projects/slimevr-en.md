@@ -87,7 +87,7 @@ You can find all the necessary [source code here](https://github.com/SlimeVR/Sli
 <ContentTitle tag="h3" hash="slimevr-gui" parent="my-contribution" label="SlimeVR GUI"/>
 
 SlimeVR started with a simple interface made with Java. We must be honest here to say that it was not very pretty...
-But hey! It was doing all the functions it needed at the time. It only needed some love <3
+But hey! It was doing all the functions it needed at the time. It only needed some love
 
 ![OLD Slimevr GUI](/images/slimevr/old-gui.png)
 

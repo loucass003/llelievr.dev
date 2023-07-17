@@ -15,7 +15,7 @@
                         </h1>
                     </div>
                 </div>
-                <div class="flex w-full sm:p-8 xs:p-4 lg:gap-8 xs:gap-4 relative">
+                <div class="flex w-full sm:p-8 xs:p-4 lg:gap-8 xs:gap-4">
                     <div class="flex flex-grow flex-col" id="page-container">
                         <h2 class="text-xl text-justify font-bold">{{ $t(`project-${$route.params.id?.toString()}-desc`) }}
                         </h2>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="flex min-w-[250px] xs:hidden md:block h-full">
                         <div class="sticky top-4">
-                            <TableOfContent :items="tocStore.toc"></TableOfContent>
+                            <TableOfContent :items="tocStore.toc" :active-hash="tocStore.activeHash"></TableOfContent>
                         </div>
                     </div>
                 </div>
